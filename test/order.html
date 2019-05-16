@@ -29,6 +29,19 @@
 
 
     </script>
+    <script>
+
+    var lineSZ = document.querySelector(".linesSZ");
+    var lines2 = document.querySelector(".lines2");
+     function SZmethod() {
+        alert(1);
+        lines2.style.display = "none";
+        lineSZ.style.display = "block";
+    }
+
+
+
+    </script>
 </head>
 <body>
 <!--头部信息-->
@@ -57,7 +70,7 @@
 <!--城市信息-->
           <div class="hot">
               <span>热门城市：</span>
-              <a href="">深圳</a>
+              <a href="javascript:;" id="shenzhen" onclick="SZmethod()">深圳</a>
               <a href="">北京</a>
               <a href="">上海</a>
               <a href="">广州</a>
@@ -85,7 +98,7 @@
   </div>
 <!--航线预定-->
 <div class="airline">
-    <span>热门航线预定</span>
+    <span>热门航线预订</span>
     <div class="city">
     <a href="" title="全国特价机票" class="country">全国</a>
     <a href="" title="深圳特价机票">深圳</a>
@@ -99,7 +112,9 @@
     <a href="" title="沈阳特价机票">沈阳</a>
     </div>
 </div>
+
 <div class="lines">
+    <!--全国航线-->
     <div class="lines2">
     <div class="listitem">
        <div class="items">
@@ -205,7 +220,8 @@
             </div></div>
     </div>
     <div class="listitem">
-        <div class="items"> <div class="citytocity">
+        <div class="items">
+            <div class="citytocity">
             <span>银川</span><div class="jiantou"></div><span>大连</span>
         </div>
             <div class="date" style="text-align:center;margin-top: 10px">
@@ -216,7 +232,128 @@
             </div></div>
     </div>
 </div>
+    <!--深圳航线-->
+    <div class="linesSZ">
+        <div class="listitem">
+            <div class="items">
+                <div class="citytocity">
+                    <span>深圳</span><div class="jiantou"></div><span>郑州</span>
+                </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>12月16日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥150</span>
+                </div>
+            </div>
+        </div>
+        <div class="listitem">
+            <div class="items">
+                <div class="citytocity">
+                    <span>深圳</span><div class="jiantou"></div><span>长沙</span>
+                </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>10月15日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥110</span>
+                </div>
+            </div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>神农架</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>05月18日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥117</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>昆明</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>05月18日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥220</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>昆明</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>11月11日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥250</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>上海浦东</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>07月03日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥150</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>上海浦东</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>01月25日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥200</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>海口</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>05月28日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥279</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items"> <div class="citytocity">
+                <span>深圳</span><div class="jiantou"></div><span>三亚</span>
+            </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>05月22日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥399</span>
+                </div></div>
+        </div>
+        <div class="listitem">
+            <div class="items">
+                <div class="citytocity">
+                    <span>深圳</span><div class="jiantou"></div><span>大连</span>
+                </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>06月23日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rmb">￥209</span>
+                </div></div>
+        </div>
+    </div>
 </div>
+
+
+
 
 </body>
 </html>

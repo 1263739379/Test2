@@ -176,11 +176,21 @@ header  .code{
     width: 1180px;
     height: 320px;
     margin: auto;
-
+    position: relative;
 }
 .lines2{
     float: left;
-
+    position: absolute;
+    left: 0;
+    top: 5px;
+    z-index: 2;
+}
+.linesSZ{
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    z-index: 1  ;
 }
 .listitem{
     width: 234px;
@@ -205,8 +215,7 @@ header  .code{
 .citytocity{
     width: 210px;
     height: 50px;
-    text-align: center;
-
+    text-align:center;
 }
 
 .date{
